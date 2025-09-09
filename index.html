@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel-Load | Premium Download</title>
+  <script type='text/javascript' src='//archaicfondlefork.com/14/20/bd/1420bd98e4824294cf6105bcd0fd44a4.js'></script>
+  <link rel="icon" href="/fv.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body, html {
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      text-align: center;
+      overflow: hidden;
+    }
+    .video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.55);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container {
+      display: flex;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      gap: 20px;
+      max-width: 900px;
+    }
+    .requirements {
+      flex: 1;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+      text-align: left;
+    }
+    .requirements h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #ffeb3b;
+    }
+    .requirements ul {
+      list-style: none;
+      line-height: 1.8;
+    }
+    .requirements ul li::before {
+      content: "✔ ";
+      color: #4caf50;
+    }
+    .download-box {
+      flex: 1;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      background: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: rainbow 5s infinite linear;
+    }
+    @keyframes rainbow {
+      0% { filter: hue-rotate(0deg); }
+      100% { filter: hue-rotate(360deg); }
+    }
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      margin: 10px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: white;
+      background: #ff5722;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background: #e64a19;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <!-- Background video -->
+  <video autoplay muted loop class="video-background">
+    <source src="yourvideo.mp4" type="video/mp4">
+  </video>
+
+  <!-- Content -->
+  <div class="overlay">
+    <div class="container">
+      <!-- Requirements Box -->
+      <div class="requirements">
+        <h2><i id="ico" class="fa-brands fa-windows"></i>&nbsp;&nbsp;System Requirements</h2>
+        <ul>
+          <li><i class="fa-brands fa-windows"></i>&nbsp;&nbsp;Windows : 7 / 10 / 11 (64-bit)</li>
+          <br>
+          <li><i class="fa-solid fa-microchip"></i>&nbsp;&nbsp;CPU : 4-core processor with a clock speed of 2.40 GHz</li>
+          <br>
+          <li><i class="fa-solid fa-memory"></i>&nbsp;&nbsp;RAM : 4 GB</li>
+          <br>
+          <li><i class="fa-solid fa-desktop"></i>&nbsp;&nbsp;Graphic card : 1GB or upper</li>
+          <br>
+          <li><i class="fa-solid fa-database"></i>&nbsp;&nbsp;Free space : 160 GB (of which 60 GB are installation files)</li>
+        </ul>
+      </div>
+
+     <div class="download-box">
+    <h1 class="gradient-text">Welcome <br> to<br> Pixel-Load</h1>
+    <div class="fle">
+      <div>
+        <img width="140px" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/e87d432c-0c31-4673-912d-407d8ee09362/djaz1iv-49c7055f-dd3f-4b10-af26-3c98c936cee4.png" alt="">
+        </div>
+        <div>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        </div>
+       <div>
+         <a style="text-decoration: none;" href="index2.html">
+          <button class="btn" onclick="startDownload()">
+<i id="ico" class="fa-solid fa-download"></i> &nbsp;&nbsp; Download File
+</button>
+         </a>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+  <script>
+    document.addEventListener("contextmenu", (e) => {
+    e.preventDefault();
+    alert("🚫 Right click is disabled on this site!");
+  });
+  </script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel-Load | Download</title>
+  <script type='text/javascript' src='//archaicfondlefork.com/14/20/bd/1420bd98e4824294cf6105bcd0fd44a4.js'></script>
+  <link rel="icon" href="/fv.png">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    /* Background video */
+    #bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    /* Overlay */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.6);
+      z-index: 0;
+    }
+
+    /* Center content */
+    .content {
+      position: relative;
+      z-index: 1;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2.8em;
+      margin-bottom: 30px;
+      background: linear-gradient(90deg, #ff4d4d, #ff9933, #33cc33, #3399ff, #cc33ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: rainbow 5s linear infinite;
+      background-size: 400% 100%;
+    }
+
+    @keyframes rainbow {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      padding: 15px 25px;
+      margin: 10px;
+      border: none;
+      border-radius: 10px;
+      font-size: 18px;
+      cursor: pointer;
+      color: white;
+      transition: transform 0.2s, background 0.3s;
+    }
+
+    .whatsapp {
+      background: #25D366;
+    }
+
+    .telegram {
+      background: #0088cc;
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+      opacity: 0.9;
+    }
+    form input{
+      padding: 10px;
+      width: 500px;
+      border-radius: 10px;
+      border: none;
+      background-color: rgba(49, 51, 49, 0.479);
+      transition: transform 1s, background 1s;
+      transition: box-shadow 0.2s, background 0.2s;
+    }
+    input:hover{
+      transform: scale(1.1);
+      opacity: 0.9;
+      box-shadow: 0px 0px 20px 10px white;
+    }
+    form label{
+      padding: 10px;
+      text-align: left;
+      margin-right: 400px;
+
+    }
+  </style>
+</head>
+<body>
+  <!-- Background video -->
+  <video autoplay muted loop id="bg-video">
+    <source src="yourvideo.mp4" type="video/mp4">
+    
+  </video>
+
+  <!-- Dark overlay -->
+  <div class="overlay"></div>
+
+  <!-- Centered content -->
+  <div class="content">
+    <h1>Welcome to Pixel-Load 🚀</h1>
+    <p>To get your download link, please fill the <b style="color: blue;">form</b> 
+    </p>
+
+    <!-- form -->
+     <form action="" method="get" netlify>
+      <label for="name"><i class="fa-brands fa-user"></i>Name </label>
+      <br><br>
+      <input id="name" type="text" placeholder="Enter Name">
+      <br>
+      <br>
+      <label for="email"><i class="fa-brands fa-email"></i>E-mail </label>
+      <br>
+      <br>
+      <input id="email" type="email" placeholder="Enter E-mail">
+      <br>
+      <br>
+      <button style="background-image: linear-gradient(267.55deg, #FFF500 0%, #FF00B8 100%);;" class="btn" type="submit">Submit</button>
+     </form>
+    
+    <!-- WhatsApp Button -->
+    <a class="btn" href="https://wa.me/919728516283?text=Hello%20👋%2C%0A%20I%E2%80%99m%20interested%20in%20purchasing%20the%20Pixel%20Vault%20premium%20download%20(%E2%82%B9599).%0APlease%20share%20the%20payment%20details%20so%20I%20can%20complete%20the%20purchase.%20🚀" target="_blank">
+      <button class="btn whatsapp">📱 Contact on WhatsApp</button>
+    </a>
+    
+    <!-- Telegram Button -->
+    <a href="https://t.me/PixelLoadSupport" target="_blank">
+      <button class="btn telegram">💬 Contact on Telegram</button>
+    </a>
+  </div>
+  <script>
+    document.addEventListener("contextmenu", (e) => {
+    e.preventDefault();
+    alert("🚫 Right click is disabled on this site!");
+  });
+  </script>
+</body>
+</html>
